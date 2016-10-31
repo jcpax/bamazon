@@ -1,7 +1,6 @@
 //bamazonCustomer
 var mysql = require('mysql');
 var inquirer = require('inquirer');
-var colors = require('colors');
 var Table = require('cli-table');
 
 var keys = require('./keys.js');		//Contains the host, port, user, password, and database to be used for in the mySQL database
@@ -18,7 +17,7 @@ function selection() {
 	    if (err) throw err;
 
 		var table = new Table({
-			head: ["Product ID".cyan, "Product Name".cyan, "Department Name".cyan, "Price".cyan, "Quantity".cyan],
+			head: ["Product ID", "Product Name", "Department Name".cyan, "Price", "Quantity"],
 			colWidths: [13, 20, 20, 13, 13],
 		});
 		
