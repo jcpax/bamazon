@@ -41,8 +41,7 @@ function viewByDepartment() {
 	    if (err) throw err;
 
 		var table = new Table({
-			head: ["Department ID".cyan, "Department Name".cyan, "Overhead Costs".cyan, "Product Sales".cyan, "Total Profit".cyan],
-			colWidths: [20, 20, 20, 20, 20],
+			head: ["Department ID", "Department Name", "Overhead Costs", "Product Sales", "Total Profit"],
 		});
 		
 		for(var i = 0; i < res.length; i++) {
@@ -92,7 +91,7 @@ function newDepartment() {
 
 function exit() {
 	connection.end();
-	console.log("Good Bye!");
+	console.log("See You Later!");
 }
 
 selection();
