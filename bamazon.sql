@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 INSERT INTO `departments` (`DepartmentID`, `DepartmentName`, `OverHeadCosts`, `TotalSales`) VALUES
 	(1, 'Art Supplies', 1500, 15125.50),
 	(2, 'School Supplies', 1000, 1330.03),
-	(3, 'Attire', 2300, 1854.87),
+	(3, 'Clothing', 2300, 1854.87),
 	(4, 'Furniture', 4000, 234.76),
 	(5, 'Electronics', 1700, 74500.50);
 	
@@ -28,10 +28,10 @@ INSERT INTO `products` (`itemID`, `ProductName`, `DepartmentName`, `Price`, `Sto
 	(1, 'Oil Paints', 'Art Supplies', 69.99, 10),
 	(2, 'Paint Brush', 'Art Supplies', 5.49, 111),
 	(3, 'Backpack', 'School Supplies', 19.99, 23),
-	(4, 'Shoes', 'Attire', 39.99, 15),
+	(4, 'Coat', 'Clothing', 39.99, 15),
 	(5, 'Fancy Blue Dress', 'Attire', 79.99, 4),
 	(6, 'Color Pencils', 'School Supplies', 2.99, 141),
-	(7, 'Short Shorts', 'Attire', 15.99, 3),
+	(7, 'Shorts', 'Clothing', 15.99, 3),
 	(8, 'Canvas', 'Art Supplies', 49.99, 21),
 	(9, 'Bedframe', 'Furniture', 234.76, 353),
 	(10, 'Clipboard', 'School Supplies', 1.99, 75),
