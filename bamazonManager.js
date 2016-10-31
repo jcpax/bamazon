@@ -1,7 +1,6 @@
 //bamazonManager
 var mysql = require('mysql');
 var inquirer = require('inquirer');
-var colors = require('colors');
 var Table = require('cli-table');
 
 var keys = require('./keys.js');
@@ -47,8 +46,7 @@ function viewProducts() {
 	    if (err) throw err;
 
 		var table = new Table({
-			head: ["Product ID".cyan, "Product Name".cyan, "Department Name".cyan, "Price".cyan, "Quantity".cyan],
-			colWidths: [13, 20, 20, 13, 13],
+			head: ["Product ID", "Product Name", "Department Name", "Price", "Quantity"],
 		});
 		
 		for(var i = 0; i < res.length; i++) {
@@ -68,8 +66,7 @@ function viewLowInventory() {
 	    if (err) throw err;
 
 		var table = new Table({
-			head: ["Product ID".cyan, "Product Name".cyan, "Department Name".cyan, "Price".cyan, "Quantity".cyan],
-			colWidths: [13, 20, 20, 13, 13],
+			head: ["Product ID", "Product Name", "Department Name", "Price", "Quantity"],
 		});
 		
 		for(var i = 0; i < res.length; i++) {
@@ -96,8 +93,7 @@ function addInventory() {
 	    if (err) throw err;
 
 		var table = new Table({
-			head: ["Product ID".cyan, "Product Name".cyan, "Department Name".cyan, "Price".cyan, "Quantity".cyan],
-			colWidths: [13, 20, 20, 13, 13],
+			head: ["Product ID", "Product Name", "Department Name", "Price", "Quantity"],
 		});
 		
 		for(var i = 0; i < res.length; i++) {
